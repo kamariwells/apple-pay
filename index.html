@@ -1,33 +1,93 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Send Kamari a Tip</title>
+<title>TBL | Client Payments</title>
 <style>
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding: 60px 20px;
-  background: #fff8f0;
-  color: #35251f;
+* {
+  box-sizing: border-box;
 }
-a {
-  display: inline-block;
-  background: #254d36;
-  color: white;
-  padding: 18px 26px;
-  border-radius: 14px;
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 70px 24px 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 35, 55, .38),
+      rgba(1, 8, 20, .88)
+    ),
+    url("https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1200&q=85")
+    center / cover no-repeat,
+    #061725;
+}
+
+h1 {
+  font-size: clamp(48px, 12vw, 64px);
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-indent: 10px;
+  line-height: 1.08;
+  margin: 35px 0 20px;
+}
+
+.tagline {
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: #e0e9ef;
+  margin: 0 0 85px;
+}
+
+.label {
+  font-size: 11px;
+  letter-spacing: 5px;
+  color: #c6d7df;
+  margin-bottom: 25px;
+}
+
+.payment {
+  display: block;
+  padding: 25px 15px;
+  margin: 16px 0;
+  border: 1px solid rgba(255,255,255,.85);
+  border-radius: 60px;
+  color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.footer {
+  margin-top: 65px;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: #c5d2da;
 }
 </style>
 </head>
 <body>
-<h1>💸 Send me a tip!</h1>
-<p>Thank you for supporting me ❤️</p>
-<p>Tap below to text me and send your tip through Apple Cash.</p>
-<a href="sms:+12134556794?body=Hi%21%20I%27d%20like%20to%20send%20you%20a%20tip%20through%20Apple%20Cash.">Send a Tip 🍎</a>
+
+<h1>TBL</h1>
+
+<p class="tagline">Your experience starts here.</p>
+
+<div class="label">CLIENT PAYMENTS</div>
+
+<a class="payment"
+href="sms:+12134556794?body=Hi%21%20I%27d%20like%20to%20complete%20my%20TBL%20payment%20through%20Apple%20Cash.">
+APPLE CASH &nbsp; ↗
+</a>
+
+<div class="footer">THE BODY WORK LAB</div>
+
 </body>
 </html>
